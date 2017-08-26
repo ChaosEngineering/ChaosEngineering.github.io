@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "About our organization"
 permalink: /about/
 ---
 # We are specialists in enterprise engineering.
