@@ -1,39 +1,50 @@
 ---
-layout: default
+layout: compress
 ---
-
-<div class="home">
-
-  {{ content }}
-
-  {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
-
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      {% capture post_lang %}{{ post.lang | default: site_lang }}{% endcapture %}
-      {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
-
-      <li{% if lang != empty %} lang="{{ lang }}"{% endif %}>
-        <header class="post-header">
-          <h1 class="post-title">
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}{% if post.external-url %} &rarr;{% endif %}</a>
-          </h1>
-
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories != empty %} • {% include category_links.html categories=post.categories %}{% endif %}</p>
-        </header>
-
-        <div class="post-content">
-          {{ post.excerpt }}
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include nav.html %}
+    <!-- Header -->
+    <header class="header flex" role="banner">
+        <div class="container animated fadeIn">
+            <div class="row">
+                    <a href="{{ site.url }}">
+                        <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn">
+                    </a>
+                    <h3 class="title">
+                        <a class="zoombtn" href="{{ site.url }}">
+                        	<p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
+			            </a>
+                    </h3>
+                    <hr class="hr-line">
+                    <h3 class="title">
+                        <a href="{{ site.url }}">
+                        	<p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
+			            </a>
+                    </h3>
+                    {% include social-links.html %}
+                  <hr class="hr-line">
+                  <h3 class="title">
+                         <a class="btn zoombtn" href="{{ site.url }}/about">
+                         About
+                         </a>
+                         <a class="btn zoombtn" href="{{ site.url }}/posts">
+                         Posts
+                         </a>
+                         <a class="btn zoombtn" href="{{ site.url }}/projects">
+                         Projects
+                         </a>
+                 </h3>
+            </div>
         </div>
-        {% if post.content contains site.excerpt_separator %}
-          <p class="post-continue">
-            <a href="{{ post.url | relative_url }}">Read on &rarr;</a>
-          </p>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-
-  {% include pagination.html %}
-
-</div>
+    </header>
+    {% include scripts.html %}
+</body>
+</html>
