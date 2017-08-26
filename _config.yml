@@ -2,7 +2,7 @@ title: Chaotic Engineering
 author: Tommy Becker
 description: Enterprise class automation engineering
 baseurl:  # the subpath of your site, e.g. /blog
-url: "http://chaoticEngineering.info" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://ChaosEngineering.info" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 timezone: UTC
 exclude:
