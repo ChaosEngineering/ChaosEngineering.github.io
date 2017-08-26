@@ -1,5 +1,5 @@
-title: Chaotic Engineering
-author: Tommy Becker
+title: Chaos Engineering
+author: Chaos Engineering Admins
 description: Enterprise class automation engineering
 baseurl:  # the subpath of your site, e.g. /blog
 url: "http://ChaosEngineering.info" # the base hostname & protocol for your site, e.g. http://example.com
