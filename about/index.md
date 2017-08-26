@@ -5,5 +5,8 @@ tags: [about]
 date: 2017-08-26
 comments: false
 ---
-
-# We are specialists in enterprise engineering.
+<center>
+<h3>
+We are specialists in enterprise engineering
+</h3>
+</center>
