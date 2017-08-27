@@ -17,4 +17,4 @@ Well, that's about it for now about this. I think I'm going to write about some 
 
 -tommy
 
-$\aleph_0
+$\aleph_0$
