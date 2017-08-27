@@ -11,10 +11,9 @@ We are specialists in enterprise automation engineering
 </h3>
 <h4>
 Our specialties include:
-<ul class="posts-list">
-<li>Powershell</li>
-<li>Windows Server automation</li>
-<li>Active Directory automation</li>
-</ul>
+
+Powershell
+Windows Server automation
+Active Directory automation
 </h4>
 </center>
