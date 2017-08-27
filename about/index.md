@@ -15,5 +15,6 @@ Our specialties include:
 <li>Powershell</li>
 <li>Windows Server automation</li>
 <li>Active Directory automation</li>
+</ul>
 </h4>
 </center>
