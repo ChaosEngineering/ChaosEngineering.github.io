@@ -7,6 +7,13 @@ comments: false
 ---
 <center>
 <h3>
-We are specialists in enterprise engineering
+We are specialists in enterprise automation engineering
 </h3>
+<h4>
+Our specialties include:
+<ul class="posts-list">
+<li>Powershell</li>
+<li>Windows Server automation</li>
+<li>Active Directory automation</li>
+</h4>
 </center>

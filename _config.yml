@@ -4,8 +4,8 @@ bio:                'Enterprise chaos elimination'
 description:        "Enterprise class automation engineering"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/home.jpg'
+logo:               'assets/img/logo.png' # From https://www.iconfinder.com/icons/642207
+background:         'assets/img/home.jpg' # From https://www.pexels.com/photo/macbook-pro-working-macbook-technology-58420/
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                http://ChaosEngineering.info
