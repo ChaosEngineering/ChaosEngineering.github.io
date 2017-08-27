@@ -6,14 +6,16 @@ date: 2017-08-26
 comments: false
 ---
 <center>
+<p>
 <h3>
 We are specialists in enterprise automation engineering
 </h3>
-<h4>
+<small>
 Our specialties include:
 
 Powershell
 Windows Server automation
 Active Directory automation
-</h4>
+</small>
+</p>
 </center>
