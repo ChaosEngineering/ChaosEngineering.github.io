@@ -7,15 +7,15 @@ comments: false
 ---
 <center>
 <p>
-<h3>
+<h4>
 We are specialists in enterprise automation engineering
-</h3>
+</h4>
 <small>
 Our specialties include:
-
-Powershell
-Windows Server automation
-Active Directory automation
+<br><br>
+Powershell<br>
+Windows Server automation<br>
+Active Directory automation<br>
 </small>
 </p>
 </center>
