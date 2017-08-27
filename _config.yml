@@ -24,6 +24,7 @@ mathjax:            true
 sass:
   sass_dir:         _sass
   style:            compressed
+future:             false
 
 # Comments
 disqus_shortname:   ChaosEngineer
@@ -38,7 +39,7 @@ disqus_shortname:   ChaosEngineer
   #ad-slot:
 #bing-verify:
 email:              admins@ChaosEngineering.info
-#twitter:            username
+#twitter:           username
 #facebook:           username
 github-url:         ChaosEngineering
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
