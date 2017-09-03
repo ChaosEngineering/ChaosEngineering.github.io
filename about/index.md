@@ -1,13 +1,16 @@
 ---
 layout: page
 title: About our organization
-tags: [about]
-date: 2017-08-26
+tags:
+  - about
+date: 2017-08-26T00:00:00.000Z
 comments: false
 ---
+
 <center>
-<p>
-<h1>
+  <p>
+</p>
+  <h1>
 We are specialists in enterprise automation engineering
 <br><br>
 <small>
@@ -18,8 +21,7 @@ Powershell
 Windows Server automation
 <br>
 Active Directory automation
-<br>
-</small>
-</h1>
+<br></small></h1>
+  <p>
 </p>
 </center>
