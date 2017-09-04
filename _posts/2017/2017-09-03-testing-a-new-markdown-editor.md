@@ -8,8 +8,8 @@ tags:
   - testing
 ---
 
-### Testing a new plugin to Atom
+# Testing a new plugin to Atom
 
 Testing an image...
 
-![chameleon](images/2017/09/chameleon-medium.png)
+![chameleon](/images/2017/09/chameleon-medium.png)
