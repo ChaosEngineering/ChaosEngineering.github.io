@@ -75,7 +75,7 @@ BigEndianAddress   : 167772160
 So, now we can do the following:
 
 ```powershell
-PS scripts:\> ([ipaddress]"10.0.0.1").BigEndianAddress .. (ddress]"10.0.0.20").BigEndianAddress|%{([ipaddress]::Parse($_))ddressToString}
+PS scripts:\> ([ipaddress]"10.0.0.1").BigEndianAddress .. ([ipaddress]"10.0.0.20").BigEndianAddress|%{([ipaddress]::Parse($_)).IPAddressToString}
 10.0.0.1
 10.0.0.2
 10.0.0.3
