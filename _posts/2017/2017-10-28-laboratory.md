@@ -7,7 +7,6 @@ excerpt: 'Let's build a new lab...'
 feature: assets/img/systems.jpeg
 comments: true
 tags:
-    - lab
     - powershell
 ---
 # The Lab setup laptop
