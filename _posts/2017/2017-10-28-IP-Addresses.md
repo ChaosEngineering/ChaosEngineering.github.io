@@ -54,7 +54,7 @@ Then I found it, a great blog article written several years ago about creating a
 In his article, he documents that you need to create a BigEndian address property and sort on that. So, we create a .ps1xml file, containing the following: (For more about format.ps1xml files, see: [http://technet.microsoft.com/en-us/library/hh847831.aspx](http://technet.microsoft.com/en-us/library/hh847831.aspx))
 
 Load this file by using Update-TypeData and you'll get...
-```posh
+```powershell
     PS scripts:\> [ipaddress]"10.0.0.0"
 
     Address            : 10
@@ -69,7 +69,7 @@ Load this file by using Update-TypeData and you'll get...
     BigEndianAddress   : 167772160
 ```
 So, now we can do the following:
-```posh
+```powershell
     PS scripts:\> ([ipaddress]"10.0.0.1").BigEndianAddress .. ([ipaddress]"10.0.0.20").BigEndianAddress|%{([ipaddress]::Parse($_)).IPAddressToString}
     10.0.0.1
     10.0.0.2
@@ -93,7 +93,7 @@ So, now we can do the following:
     10.0.0.20
 ```
 It works on any range:
-```posh
+```powershell
     PS scripts:\> $range = ([ipaddress]"10.0.0.1").BigEndianAddress .. ([ipaddress]"10.0.10.1").BigEndianAddress|%{([ipaddress]::Parse($_)).IPAddressToString}
 
     PS scripts:\> $range | select -First 10
