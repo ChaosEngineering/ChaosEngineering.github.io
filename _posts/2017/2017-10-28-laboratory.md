@@ -1,11 +1,8 @@
 ---
 layout: post
-title: Building a New Lab
-author: Tommy Becker
-date: '2017-10-28 13:19'
-excerpt: 'Let's build a new lab...'
-feature: assets/img/systems.jpeg
-comments: true
+title: A new lab
+author: Tommy
+date: '2017-10-28 14:35'
 ---
 # The Lab setup laptop
 ## The Laptop
