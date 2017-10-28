@@ -6,8 +6,6 @@ date: '2017-10-28 13:19'
 excerpt: 'Let's build a new lab...'
 feature: assets/img/systems.jpeg
 comments: true
-tags:
-    - powershell
 ---
 # The Lab setup laptop
 ## The Laptop
