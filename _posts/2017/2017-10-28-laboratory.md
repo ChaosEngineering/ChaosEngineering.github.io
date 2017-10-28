@@ -2,7 +2,13 @@
 layout: post
 title: A new lab
 author: Tommy
-date: '2017-10-28 14:35'
+date: '2017-10-28 4:17'
+excerpt: 'Hey, I was thinking about a whole list of IPs...'
+feature: assets/img/systems.jpeg
+comments: true
+tags:
+    - thoughts
+    - code
 ---
 # The Lab setup laptop
 ## The Laptop
