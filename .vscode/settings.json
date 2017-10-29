@@ -1,5 +1,5 @@
 {
-    "files.defaultLanguage": "markdown",
+    //`"files.defaultLanguage": "markdown",
     "files.eol": "\n",
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false,
