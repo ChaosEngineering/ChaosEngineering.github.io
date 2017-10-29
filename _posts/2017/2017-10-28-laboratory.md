@@ -11,6 +11,7 @@ tags:
     - code
 ---
 # The Lab setup laptop
+
 ## The Laptop
 
 The other night, my laptop decided to update and something went seriously sideways and I wound up rebuilding the whole thing. But, I saved everything, luckily. I moved everything I felt was important over to a network drive and just wiped out the whole thing. I've been working on a few scripts that would help me rebuild my system from nothing. There's a few things that you can't do, like go and log into all of your websites that require two-factor authentication. But, there are a bunch of tasks that can make you life easier.
