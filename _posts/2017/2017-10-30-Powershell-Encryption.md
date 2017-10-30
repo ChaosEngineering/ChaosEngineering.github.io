@@ -44,3 +44,8 @@ There's two CMDlets that we're going to be using to use the certificates and pro
 
 The first thing we want to do is encrypt our secure data. To do this we use the aptly named [Protect-CMSMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/Protect-CmsMessage?view=powershell-5.1)\.
 
+> One thing to note: You can only encrypt text with these commands, you can't encrypt objects or binary files. I'll try to cover how to convert binary file information into base64 encoding so that you can encrypt it, but it's a processor intensive task that is not very useful. In order to capture an object, you'll need to pull it out as a CLIXML file or JSON and then convert it back into an object and cast it as the appropriate class type. Most of the time, you're going to be storing passwords or API keys and other simple sensitive data. For this example, we're going to concentrate on strings only.
+{: title="Please Note"}
+
+Here's how we encrypt our secure data:
+
