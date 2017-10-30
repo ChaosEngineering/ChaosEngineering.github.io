@@ -82,3 +82,7 @@ Cmdlet          Set-ExecutionPolicy                                3.0.0.0    Mi
 Cmdlet          Test-FileCatalog                                   3.0.0.0    Microsoft.PowerShell.Security
 Cmdlet          Unprotect-CmsMessage                               3.0.0.0    Microsoft.PowerShell.Security
 ```
+
+The first thing we want to do is encrypt our secure data. To do this we use the aptly named [Protect-CMSMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/Protect-CmsMessage?view=powershell-5.1)\.
+
+{% gist mockmyberet/3c7d53c703396ba81715ed268a18f9af#file-example-output %}
