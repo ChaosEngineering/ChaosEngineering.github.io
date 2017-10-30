@@ -38,6 +38,8 @@ So, now we can start encrypting things!
 
 ### Protect-CMSMessage & Unprotect-CMSMessage
 
+### Encryption
+
 There's two CMDlets that we're going to be using to use the certificates and protect our data from those that would do us harm. (sorry, had to add some drama...) Those two commands are 'Protect-CMSMessage' and 'Unprotect-CMSMessage.' They are part of the [Microsoft.Powershell.Security](https://technet.microsoft.com/en-us/library/hh847877.aspx) module which is part of [Powershell 5.0 and 5.1](https://technet.microsoft.com/en-us/library/hh847877.aspx)\.
 
 {% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 output1.txt %}
@@ -48,5 +50,19 @@ The first thing we want to do is encrypt our secure data. To do this we use the 
 {: title="Please Note"}
 
 Here's how we encrypt our secure data:
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 EncryptSomeStuff.ps1 %}
+
+And this is our output...
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 output2.txt %}
+
+And the file we created...
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 password.cms %}
+
+So, that means nothing if we can't use it.
+
+Let's use it.
 
 *[CMS]: Cryptographic Message Syntax
