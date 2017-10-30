@@ -24,7 +24,7 @@ Following instructions from Microsoft, [here](https://docs.microsoft.com/en-us/p
 
 Make sure to change the subject to what you feel is appropriate, this is how we will refer to it in our Powershell commands.
 
-```inf
+```ini
 [Version]
 Signature = "$Windows NT$"
 [Strings]
@@ -49,7 +49,7 @@ Save the file as something like DocumentEncryption.inf, this is the information 
 
 So, run the following to do so:
 
-```cmd
+```shell
 certreq -new DocumentEncryption.inf DocumentEncryption.cer
 ```
 
