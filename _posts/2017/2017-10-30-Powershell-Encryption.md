@@ -24,7 +24,7 @@ Following instructions from Microsoft, [here](https://docs.microsoft.com/en-us/p
 
 Make sure to change the subject to what you feel is appropriate, this is how we will refer to it in our Powershell commands.
 
-```ini
+```text
 [Version]
 Signature = "$Windows NT$"
 [Strings]
