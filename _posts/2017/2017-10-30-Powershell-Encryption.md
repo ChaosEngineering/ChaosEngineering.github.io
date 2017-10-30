@@ -30,9 +30,7 @@ Save the file as something like DocumentEncryption.inf, this is the information 
 
 So, run the following to do so:
 
-```shell
-certreq -new DocumentEncryption.inf DocumentEncryption.cer
-```
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 Generate.cmd %}
 
 So, now we can start encrypting things!
 
@@ -42,27 +40,7 @@ So, now we can start encrypting things!
 
 There's two CMDlets that we're going to be using to use the certificates and protect our data from those that would do us harm. (sorry, had to add some drama...) Those two commands are 'Protect-CMSMessage' and 'Unprotect-CMSMessage.' They are part of the [Microsoft.Powershell.Security](https://technet.microsoft.com/en-us/library/hh847877.aspx) module which is part of [Powershell 5.0 and 5.1](https://technet.microsoft.com/en-us/library/hh847877.aspx)\.
 
-```powershell
-get-command -Module Microsoft.PowerShell.Security
-
-CommandType     Name                                               Version    Source
------------     ----                                               -------    ------
-Cmdlet          ConvertFrom-SecureString                           3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          ConvertTo-SecureString                             3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Get-Acl                                            3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Get-AuthenticodeSignature                          3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Get-CmsMessage                                     3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Get-Credential                                     3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Get-ExecutionPolicy                                3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Get-PfxCertificate                                 3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          New-FileCatalog                                    3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Protect-CmsMessage                                 3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Set-Acl                                            3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Set-AuthenticodeSignature                          3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Set-ExecutionPolicy                                3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Test-FileCatalog                                   3.0.0.0    Microsoft.PowerShell.Security
-Cmdlet          Unprotect-CmsMessage                               3.0.0.0    Microsoft.PowerShell.Security
-```
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 output1.txt %}
 
 The first thing we want to do is encrypt our secure data. To do this we use the aptly named [Protect-CMSMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/Protect-CmsMessage?view=powershell-5.1)\.
 
