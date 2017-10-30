@@ -24,26 +24,7 @@ Following instructions from Microsoft, [here](https://docs.microsoft.com/en-us/p
 
 Make sure to change the subject to what you feel is appropriate, this is how we will refer to it in our Powershell commands.
 
-```text
-[Version]
-Signature = "$Windows NT$"
-[Strings]
-szOID\_ENHANCED\_KEY\_USAGE = "2.5.29.37"
-szOID\_DOCUMENT\_ENCRYPTION = "1.3.6.1.4.1.311.80.1"
-[NewRequest]
-Subject = "change.me@somewhere.com"
-MachineKeySet = false
-KeyLength = 2048
-KeySpec = AT\_KEYEXCHANGE
-HashAlgorithm = Sha1
-Exportable = true
-RequestType = Cert
-KeyUsage = "CERT\_KEY\_ENCIPHERMENT\_KEY\_USAGE | CERT\_DATA\_ENCIPHERMENT\_KEY\_USAGE"
-ValidityPeriod = "Years"
-ValidityPeriodUnits = "1000"
-[Extensions]
-%szOID\_ENHANCED\_KEY\_USAGE% = "{text}%szOID\_DOCUMENT\_ENCRYPTION%"
-```
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 DocumentEncryption.inf %}
 
 Save the file as something like DocumentEncryption.inf, this is the information we will pass in the next command that will generate the key pair, install it to our User Key store and save out a Public Key file that we can share and use to encrypt our messages.
 
@@ -85,4 +66,3 @@ Cmdlet          Unprotect-CmsMessage                               3.0.0.0    Mi
 
 The first thing we want to do is encrypt our secure data. To do this we use the aptly named [Protect-CMSMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/Protect-CmsMessage?view=powershell-5.1)\.
 
-{% gist mockmyberet/3c7d53c703396ba81715ed268a18f9af file-example-output %}
