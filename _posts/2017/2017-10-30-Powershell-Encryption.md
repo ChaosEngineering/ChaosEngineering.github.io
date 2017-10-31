@@ -32,6 +32,10 @@ So, run the following to do so:
 
 {% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 Generate.cmd %}
 
+This created a key-pair in our local cert store, but it also created a file:
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 DocumentEncryption.cer %}
+
 So, now we can start encrypting things!
 
 ## Encrypt all the things
@@ -65,4 +69,47 @@ So, that means nothing if we can't use it.
 
 Let's use it.
 
+### Decryption
+
+Since our key is stored in the user store, we can use some shortcuts. But, I've found when it's in the machine store, we have to pull the private key out. I'm still working on that, just in case I'm making a mistake, I'll update the post accordingly.
+
+So, this is how we're going to get the password and create a pscredential object out of it...
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 CreateAPSCredential.ps1 %}
+
+And this is out output from that...
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 output3.txt %}
+
+That's about all there is to that.
+
+## But, wait, there's more
+
+### Envelopes
+
+Our CMS has an envelope (if you read the RFC, you'd know this already... lol) that we can access with [Get-CMSMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-cmsmessage?view=powershell-5.1)\.
+
+We can do that like this...
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 ShowTheEnvelope.ps1 %}
+
+And that outputs...
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 output4.txt %}
+
+### Export the Private Key
+
+Microsoft's given us a few other tools to work with the certificate store. One thing we want to do is export the key-pair including the Private Key into a password protected file that we can transport to servers or maybe store incase our machine needs to be rebuilt.
+
+Looking in the PKI module, we have [Export-PfxCertificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/Export-PfxCertificate?view=win10-ps)\.
+
+{% gist mockmyberet/7dd93fa7bfeac98ef6dea96a9a5f44a5 output5.txt %}
+
+### Import the Private Key
+
+And we have the [Import-PfxCertificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/import-pfxcertificate?view=win10-ps)\.
+
+## More to come
+
 *[CMS]: Cryptographic Message Syntax
+*[JSON]: JavaScript Object Notation
