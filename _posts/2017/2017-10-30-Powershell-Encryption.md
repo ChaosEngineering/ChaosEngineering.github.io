@@ -116,3 +116,9 @@ And we have the [Import-PfxCertificate](https://docs.microsoft.com/en-us/powersh
 *[JSON]: JavaScript Object Notation
 *[Public Key]: Used to encrypt
 *[Private Key]: Used to decrypt
+
+$$ \[
+   \frac{1}{(\sqrt{\phi \sqrt{5}}-\phi) e^{\frac25 \pi}} =
+     1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+      {1+\frac{e^{-8\pi}} {1+\ldots} } } }
+\] $$
