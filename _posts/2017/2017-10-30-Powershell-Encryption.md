@@ -4,6 +4,7 @@ title: Powershell 5.0 and CMS Encryption
 author: Tommy Becker
 date: 2017-10-30 12:49
 excerpt: I've been trying to research CMS encryption in Powershell 5.0 and have found very little out there.
+comments: true
 feature: assets/img/chips.jpeg
 ---
 # CMS Encryption and Powershell 5.0
