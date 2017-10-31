@@ -13,7 +13,7 @@ feature: assets/img/chips.jpeg
 
 Cryptographic Message Syntax (or CMS) is defined by [RFC5652](https://tools.ietf.org/html/rfc5652), it defines a syntax to digitally sign, digest, authenticate, or encrypt arbitrary message content. That's a whole lot of words to use to say that, with any number of certificate-based key management systems, we can secure data for storage and transport across insecure mediums, such as the internet.
 
-What we're going to do is create a Public and Private key pair and use them to encrypt and decrypt messages, respectively. For those unfamiliar with this method of key sharing, there are two keys involved.[^1]. First there is the Public Key that is used to encrypt the data. This key is intended to be able to be shared freely so that messages can be encrypted by anyone. Then, there is the Private Key that is kept secret. It is used to decrypt any of the messages that were encrypted by the respective Public Key.
+What we're going to do is create a Public and Private key pair and use them to encrypt and decrypt messages, respectively. For those unfamiliar with this method of key sharing, there are two keys involved.[^footnote]. First there is the Public Key that is used to encrypt the data. This key is intended to be able to be shared freely so that messages can be encrypted by anyone. Then, there is the Private Key that is kept secret. It is used to decrypt any of the messages that were encrypted by the respective Public Key.
 
 The Public Key certificate will be in a file that we designate with a .cer extension. The Private Key certificate (along with the Public Key) will be installed in our certificate store on the local system. We will mark it as exportable, so that we can export the key pair as a password secured .pfx file for transport to another system or for backing it up for future recovery or use.
 
@@ -114,4 +114,4 @@ And we have the [Import-PfxCertificate](https://docs.microsoft.com/en-us/powersh
 
 *[CMS]: Cryptographic Message Syntax
 *[JSON]: JavaScript Object Notation
-[^1] See [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography) for more info.
+[^footnote] See [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography) for more info.
