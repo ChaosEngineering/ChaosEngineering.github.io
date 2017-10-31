@@ -114,4 +114,5 @@ And we have the [Import-PfxCertificate](https://docs.microsoft.com/en-us/powersh
 
 *[CMS]: Cryptographic Message Syntax
 *[JSON]: JavaScript Object Notation
-*[Public Key]: See [Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography) for more info.
+*[Public Key]: Used to encrypt
+*[Private Key]: Used to decrypt
