@@ -135,5 +135,5 @@ PS scripts:\> $range.count
 And that's about it.
 
 $$
-\[ \large x+\frac{1}{x} = 5, \qquad x^2 + \frac{1}{x^2} = \, ? \]
+\large x+\frac{1}{x} = 5, \qquad x^2 + \frac{1}{x^2} = \, ?
 $$
